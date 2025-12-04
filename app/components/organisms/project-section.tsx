@@ -3,7 +3,6 @@
 import { SectionHeading } from "@components/atoms/section-heading";
 import ProjectCard  from "@components/molecules/project-card";
 import { GitHubCalendar } from "react-github-calendar";
-import GitHubContributions from "../molecules/github-calendar";
 
 const projects = [
 {
