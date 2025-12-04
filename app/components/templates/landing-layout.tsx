@@ -1,10 +1,15 @@
+import { ReactNode } from "react";
 import { Navbar } from "../organisms/navbar";
 
-export default function LandingLayout({ children }) {
+interface LandingLayoutProps {
+  children: ReactNode;
+}
+
+export default function LandingLayout({ children }: LandingLayoutProps) {
   return (
     <div className="relative">
       <Navbar />
-      <main className="pt-20">{children}</main>
+      {children}
     </div>
   );
 }
