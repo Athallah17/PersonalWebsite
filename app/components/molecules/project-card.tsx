@@ -5,8 +5,19 @@ import { Button } from "@components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
 import { FaGithub } from "react-icons/fa6";
 
+type Project = {
+  name: string;
+  description: string;
+  tech: string[];
+  github?: string;
+  live?: string;
+  image: string;
+};
 
-export default function ProjectCard({ project }) {
+interface ProjectCardProps {
+  project: Project;
+}
+export default function ProjectCard({ project }: ProjectCardProps) {
     return (
         <Card className="w-full max-w-xl bg-card text-card-foreground shadow-xl rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
             <CardHeader className="p-0 relative w-full h-56 overflow-hidden">
